@@ -131,3 +131,23 @@ body {
     font-weight: var(--fw-700);
     text-decoration: underline;
 }
+
+
+@media (min-width: 45em) {
+    .intro {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery div:nth-of-type(2n) {
+        margin-top: 0;
+    }
+
+    .gallery div:nth-of-type(3n-1) {
+        margin-top: 6rem;
+    }
+}
