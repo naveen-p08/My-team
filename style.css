@@ -56,5 +56,78 @@ picture {
 }
 
 body {
-    padding-inline: 2rem;
+    padding-inline: 1.5rem;
+    color: hsl(var(--clr-black));
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+}
+
+.intro {
+    margin-top: clamp(7rem, 10vw, 10rem);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.logo {
+    font-size: var(--fs-900);
+    font-weight: var(--fw-700);
+    font-family: var(--ff-ptserif);
+}
+
+.about h1 {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-600);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    max-width: 35ch;
+}
+
+.about {
+    margin-bottom: clamp(5rem, 10vw, 10rem);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(6rem, 7vw, 8rem) clamp(3rem, 7vw, 6rem);
+}
+
+.gallery div {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.6rem;
+}
+
+.gallery div:nth-of-type(2n) {
+    margin-top: 5rem;
+}
+
+.gallery div h2 {
+    font-size: var(--fs-300);
+    font-family: var(--ff-ptserif);
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+}
+
+.gallery figcaption {
+    font-weight: var(--fw-600);
+    margin-top: 0.5rem;
+}
+
+.attribution {
+    font-size: var(--fs-attribution);
+    font-family: var(--ff-montserrat);
+    color: hsl(var(--clr-attribution));
+    margin-block: 10rem 5rem;
+    text-align: center;
+}
+
+.attribution a {
+    font-weight: var(--fw-700);
+    text-decoration: underline;
 }
